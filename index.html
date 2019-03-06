@@ -160,6 +160,74 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-二叉树遍历" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<h2 id="二叉树遍历"><a href="#二叉树遍历" class="headerlink" title="二叉树遍历"></a>二叉树遍历</h2><h2 id="1-何为二叉树遍历："><a href="#1-何为二叉树遍历：" class="headerlink" title="1.何为二叉树遍历："></a>1.何为二叉树遍历：</h2><p> 二叉树的遍历（traversing binary tree）是指从根结点出发，按照某种次序依次访问二叉树中所有的结点，使得每个结点被访问依次且仅被访问一次。</p>
+<p>##四种遍历类型 </p>
+<h3 id="1-先序遍历"><a href="#1-先序遍历" class="headerlink" title="1.先序遍历"></a>1.先序遍历</h3><p><strong>先序： 1.访问根结点</strong></p>
+<p>　　　  <strong>2.访问左子树</strong></p>
+<p>　　　<strong> 3.访问右子树</strong></p>
+<p><img src="https://images2015.cnblogs.com/blog/797373/201511/797373-20151122165945218-785764344.png" alt><br><img src="https://images2017.cnblogs.com/blog/1258519/201711/1258519-20171101104826138-904063732.jpg" alt></p>
+<h3 id="2-中序遍历"><a href="#2-中序遍历" class="headerlink" title="2.中序遍历"></a>2.中序遍历</h3><p><strong>先序： 1.访问左子树</strong></p>
+<p><strong>　　　 2.访问根结点</strong></p>
+<p><strong>　　　 3.访问右子树</strong></p>
+<p>原则：访问左子树。【先访问左子树中的左子树，再访问左子树中的右子树。】直到访问到叶子结点后输出。</p>
+<p>　　　输出根。</p>
+<p>　　　访问右子树。【先访问右子树中的左子树，再访问右子树中的右子树。】直到访问到叶子结点后输出。</p>
+<p><img src="https://images2015.cnblogs.com/blog/797373/201511/797373-20151122170949358-2020624570.png" alt><br><img src="https://images2017.cnblogs.com/blog/1258519/201711/1258519-20171101104826998-2133273743.jpg" alt></p>
+<h3 id="3-后序遍历"><a href="#3-后序遍历" class="headerlink" title="3.后序遍历"></a>3.后序遍历</h3><p><img src="https://images2015.cnblogs.com/blog/797373/201511/797373-20151122172046733-2067460461.png" alt><br> 先访问A的左子树。再访问左子树中的左子树。【即：A的左子树为B，再访问B的左子树D。D没有左右子树，输出D。】，然后访问左子树中的右子树。【即：访问B的右子树F，F还有左子树，再访问F的左子树E，E没有左右子树。输出E。再输出F，再输出B。】。</p>
+<p> 然后访问A的右子树。再访问右子树中的左子树。【即：A的右子树为C，再访问C的左子树G。G还有右子树H，输出H。再输出G，再输出G】，然后访问右子树中的右子树。【即：访问C的右子树I，I没有左右子树，输出I。在输出C。再输出A。】。</p>
+<p> 所以，后序遍历输出结果为：（D E F B）（H G I C）A</p>
+<p><img src="https://images2017.cnblogs.com/blog/1258519/201711/1258519-20171101104826138-358742940.jpg" alt></p>
+<h3 id="4-层序遍历"><a href="#4-层序遍历" class="headerlink" title="4.层序遍历"></a>4.层序遍历</h3><p>若树为空，则空操作返回。否则，从树的第一层，也就是根节点开始访问，从上到下逐层遍历，在同一层中，按从左到右的顺序结点逐个访问。</p>
+<p><img src="https://images2017.cnblogs.com/blog/1258519/201711/1258519-20171101104826170-942797910.jpg" alt></p>
+<h2 id="下面是小甲鱼对于二叉树遍历的理解（附上ppt）："><a href="#下面是小甲鱼对于二叉树遍历的理解（附上ppt）：" class="headerlink" title="下面是小甲鱼对于二叉树遍历的理解（附上ppt）："></a><strong>下面是小甲鱼对于二叉树遍历的理解（附上ppt）：</strong></h2><h3 id="把每一个三角形看成一个封建家庭，有大家庭，中家庭，小家庭去理解！很有用！！！！！墙裂推荐！！！！！"><a href="#把每一个三角形看成一个封建家庭，有大家庭，中家庭，小家庭去理解！很有用！！！！！墙裂推荐！！！！！" class="headerlink" title="把每一个三角形看成一个封建家庭，有大家庭，中家庭，小家庭去理解！很有用！！！！！墙裂推荐！！！！！"></a>把每一个三角形看成一个封建家庭，有大家庭，中家庭，小家庭去理解！很有用！！！！！墙裂推荐！！！！！</h3><p><img src="https://i.imgur.com/RoJFXE3.jpg" alt><br><img src="https://i.imgur.com/GBvioxe.jpg" alt><br><img src="https://i.imgur.com/vnfRBKN.jpg" alt><br><img src="https://i.imgur.com/ty9dxbJ.jpg" alt><br><img src="https://i.imgur.com/coEbXQn.jpg" alt><br><img src="https://i.imgur.com/CobmJJD.jpg" alt><br><img src="https://i.imgur.com/VBRKO6U.jpg" alt><br><img src="https://i.imgur.com/jqWupIu.jpg" alt><br><img src="https://i.imgur.com/9QVrpja.jpg" alt></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/03/06/二叉树遍历/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-剑指offer题解" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -183,6 +251,20 @@ def Find(self, target, array):
         else:
             i+=1
     return False
+</code></pre><h3 id="2-替换空格"><a href="#2-替换空格" class="headerlink" title="2.替换空格"></a>2.替换空格</h3><p>题目描述：<br>请实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。</p>
+<pre><code># s 源字符串
+def replaceSpace(self, s):
+    # write code here
+    return &quot;%20&quot;.join(s.split(&apos; &apos;))
+</code></pre><h3 id="3-从尾到头打印链表"><a href="#3-从尾到头打印链表" class="headerlink" title="3.从尾到头打印链表"></a>3.从尾到头打印链表</h3><p>题目描述：<br>输入一个链表，按链表值从尾到头的顺序返回一个ArrayList。</p>
+<pre><code># 返回从尾部到头部的列表值序列，例如[1,2,3]
+def printListFromTailToHead(self, listNode):
+    # write code here
+    newlist =[]
+    while listNode is not None:
+        newlist.append(listNode.val)
+        listNode = listNode.next
+    return newlist[::-1]
 </code></pre>
       
 
