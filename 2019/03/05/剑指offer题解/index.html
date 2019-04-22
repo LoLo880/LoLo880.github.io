@@ -8,19 +8,19 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>DLF的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="剑指offer题解接下来一段时间将总结剑指offer题解思路参考：https://blog.csdn.net/tinkle181129/article/details/79326023 1.二维数组中的查找在一个二维数组中（每个一维数组的长度相同），每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。">
+  <meta name="description" content="剑指offer题解(python)接下来一段时间将总结剑指offer题解思路参考：https://blog.csdn.net/tinkle181129/article/details/79326023 1.二维数组中的查找在一个二维数组中（每个一维数组的长度相同），每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中">
 <meta name="keywords" content="开发者，数据挖掘，机器学习，程序猿，编程">
 <meta property="og:type" content="article">
 <meta property="og:title" content="DLF的博客">
 <meta property="og:url" content="http://yoursite.com/2019/03/05/剑指offer题解/index.html">
 <meta property="og:site_name" content="DLF的博客">
-<meta property="og:description" content="剑指offer题解接下来一段时间将总结剑指offer题解思路参考：https://blog.csdn.net/tinkle181129/article/details/79326023 1.二维数组中的查找在一个二维数组中（每个一维数组的长度相同），每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。">
+<meta property="og:description" content="剑指offer题解(python)接下来一段时间将总结剑指offer题解思路参考：https://blog.csdn.net/tinkle181129/article/details/79326023 1.二维数组中的查找在一个二维数组中（每个一维数组的长度相同），每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://i.imgur.com/8ekKPhx.jpg">
-<meta property="og:updated_time" content="2019-03-05T14:50:05.647Z">
+<meta property="og:updated_time" content="2019-03-12T02:06:11.685Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="DLF的博客">
-<meta name="twitter:description" content="剑指offer题解接下来一段时间将总结剑指offer题解思路参考：https://blog.csdn.net/tinkle181129/article/details/79326023 1.二维数组中的查找在一个二维数组中（每个一维数组的长度相同），每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。">
+<meta name="twitter:description" content="剑指offer题解(python)接下来一段时间将总结剑指offer题解思路参考：https://blog.csdn.net/tinkle181129/article/details/79326023 1.二维数组中的查找在一个二维数组中（每个一维数组的长度相同），每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中">
 <meta name="twitter:image" content="https://i.imgur.com/8ekKPhx.jpg">
   
     <link rel="alternative" href="/atom.xml" title="DLF的博客" type="application/atom+xml">
@@ -167,7 +167,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<h2 id="剑指offer题解"><a href="#剑指offer题解" class="headerlink" title="剑指offer题解"></a>剑指offer题解</h2><p>接下来一段时间将总结剑指offer题解思路<br>参考：<a href="https://blog.csdn.net/tinkle181129/article/details/79326023" target="_blank" rel="noopener">https://blog.csdn.net/tinkle181129/article/details/79326023</a></p>
+<h2 id="剑指offer题解-python"><a href="#剑指offer题解-python" class="headerlink" title="剑指offer题解(python)"></a>剑指offer题解(python)</h2><p>接下来一段时间将总结剑指offer题解思路<br>参考：<a href="https://blog.csdn.net/tinkle181129/article/details/79326023" target="_blank" rel="noopener">https://blog.csdn.net/tinkle181129/article/details/79326023</a></p>
 <h3 id="1-二维数组中的查找"><a href="#1-二维数组中的查找" class="headerlink" title="1.二维数组中的查找"></a>1.二维数组中的查找</h3><p>在一个二维数组中（每个一维数组的长度相同），每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。</p>
 <p><img src="https://i.imgur.com/8ekKPhx.jpg" alt></p>
 <pre><code># array 二维列表
@@ -198,6 +198,91 @@ def printListFromTailToHead(self, listNode):
         newlist.append(listNode.val)
         listNode = listNode.next
     return newlist[::-1]
+</code></pre><h3 id="4-重建二叉树"><a href="#4-重建二叉树" class="headerlink" title="4.重建二叉树"></a>4.重建二叉树</h3><p>题目描述：<br>输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。例如输入前序遍历序列{1,2,4,7,3,5,6,8}和中序遍历序列{4,7,2,1,5,3,8,6}，则重建二叉树并返回。</p>
+<pre><code># class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+class Solution:
+# 返回构造的TreeNode根节点
+def reConstructBinaryTree(self, pre, tin):
+#pre、tin分别是前序序列和中序序列
+    # write code here
+    lon = len(pre)
+    if lon == 0:
+        return None
+    elif lon == 1:
+        return TreeNode(pre[0])
+    else:
+        #pre[0]是读取的根节点，设rootid=tin.index[pre[0]],求得是根结点的id；
+        #在前序遍历中，1为根结点，在第一位，2,4,7为左子树，3,5,6,8为右子树
+        #在中序遍历中，1为根结点，在中间位， 4,7,2为左子树，5,3,8,6为右子树
+        #求左子树：在前序遍历中，区间为[1:rootid+1],因为第一位为根结点；在中序遍历中，区间为[:rootid]
+        #求右子树，在前序遍历中，区间为[rootid:];在中序遍历中，区间为[rootid+1:]
+        root = TreeNode(pre[0])
+        root.left = self.reConstructBinaryTree(pre[1:tin.index(pre[0])+1],tin[:tin.index(pre[0])])
+        root.right = self.reConstructBinaryTree(pre[tin.index(pre[0])+1:],tin[tin.index(pre[0])+1:])
+        return root 
+</code></pre><h3 id="5-用两个栈实现队列"><a href="#5-用两个栈实现队列" class="headerlink" title="5.用两个栈实现队列"></a>5.用两个栈实现队列</h3><p>题目描述:<br>用两个栈来实现一个队列，完成队列的Push和Pop操作。 队列中的元素为int类型。</p>
+<pre><code># -*- coding:utf-8 -*-
+class Solution:
+    def __init__(self):
+        self.stack1 = []
+        self.stack2 = []
+    def push(self, node):
+        # write code here
+        self.stack1.append(node)
+    def pop(self):
+        # return xx
+        if len(self.stack2) == 0:
+            while self.stack1:
+                self.stack2.append(self.stack1.pop())
+        return self.stack2.pop()
+</code></pre><h3 id="6-旋转数组的最小数字"><a href="#6-旋转数组的最小数字" class="headerlink" title="6.旋转数组的最小数字"></a>6.旋转数组的最小数字</h3><p>题目描述:<br>把一个数组最开始的若干个元素搬到数组的末尾，我们称之为数组的旋转。 输入一个非减排序的数组的一个旋转，输出旋转数组的最小元素。 例如数组{3,4,5,1,2}为{1,2,3,4,5}的一个旋转，该数组的最小值为1。 NOTE：给出的所有元素都大于0，若数组大小为0，请返回0。</p>
+<pre><code># -*- coding:utf-8 -*-
+class Solution:
+    def minNumberInRotateArray(self, rotateArray):
+        # write code here
+        if len(rotateArray) == 0:
+            return 0
+        left = 0
+        right = len(rotateArray) - 1
+        mid = 0
+        while rotateArray[left] &gt;= rotateArray[right]:
+            if right - left == 1:
+                mid = right
+                break
+            ##  //表示向下取整
+            mid = left + (right - left) // 2
+            if rotateArray[left] == rotateArray[mid] and rotateArray[mid] == rotateArray[right]:
+                return self.minInorder(rotateArray, left, right)
+            if rotateArray[mid] &gt;= rotateArray[left]:
+                left = mid
+            else:
+                right = mid
+        return rotateArray[mid]
+
+    def minInorder(self, array, left, right):
+        result = array[left]
+        for i in range(left+1, right+1):
+            if array[i] &lt; result:
+                result = array[i]
+        return result
+</code></pre><h4 id="7-斐波那契数列"><a href="#7-斐波那契数列" class="headerlink" title="7.斐波那契数列"></a>7.斐波那契数列</h4><p>题目描述：<br>大家都知道斐波那契数列，现在要求输入一个整数n，请你输出斐波那契数列的第n项（从0开始，第0项为0）。<br>n&lt;=39</p>
+<p>思路：简单的方法是从下往上计算，首先根据f(0)和f(1)算出f(2),f(1)和f(2)算出f(3)…..时间复杂度为O(n).</p>
+<pre><code># -*- coding:utf-8 -*-
+class Solution:
+    def Fibonacci(self, n):
+        # write code here
+        if n &lt;= 1:
+            return n
+        first, second, third = 0, 1, 0
+        for i in range(2, n+1):
+            third = first + second
+            first = second
+            second = third
+        return third
 </code></pre>
       
 
